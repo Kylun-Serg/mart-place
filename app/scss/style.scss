@@ -5,3 +5,156 @@
 
 						/*START HEADER*/
 
+.header__top {
+	background-color: $bg-gray;	
+	&-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 100px;
+	}
+
+	&-content {
+		max-width: 555px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		a{
+			width: 165px;
+			text-align: center;
+			border-radius: 22px;
+			color: #fff;
+			padding: 5px 0px 6px;
+		}
+		.register {
+			background-color: #092fba;
+		}
+		.login {
+			background-color: #2d50d1;
+		}
+		a + a {
+			margin-left: 20px;
+		}	
+
+	}
+}
+
+.header__menu-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 80px;
+}
+
+.menu__header {
+	max-width: 750px;
+	li {
+		display: inline-block;
+	}
+
+	li + li {
+		margin-left: 30px;
+	}
+	a {
+		font-size: 15px;
+		line-height: 42px;
+		text-transform: uppercase;
+		font-weight: 500;
+		color: #333;
+	}
+}
+
+.top-search-form {
+	max-width: 360px;
+	width: 100%;
+	position: relative;
+
+	input {
+		display: block;
+		width: 100%;
+		border-radius: 20px;
+		height: 44px;
+		border: 1px solid #d9dfe5;
+		font-size: 15px;
+		line-height: 30px;
+		font-weight: 500;
+		outline: none;
+		padding-left: 22px;
+		padding-right: 70px;
+		&::placeholder {
+			color: #898f96;
+			font-weight: 500;
+		}
+	}	
+	.search {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: $btn-blue;
+		border: none;
+		outline: none;
+		padding: 12px 27px;
+		border-radius: 20px;
+	}
+}
+
+				/*SLOGAN*/
+
+.slogan {
+  background: linear-gradient( 180deg, rgb(45,80,209) 0%,  rgb(14,52,190) 100%);
+  opacity: 0.8;
+  padding: 180px 0 230px;   
+}
+
+.slogan__inner {
+	color: #f3f3f8;
+	text-align: center;
+}	
+
+.slogan__content {
+	&-title {
+		font-size: 60px;
+		line-height: 70px;
+		span {
+			display: block;
+			font-weight: 700;
+		}
+	}
+	&-text {
+		margin-top: 20px;
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 500;
+	}
+}
+
+.slogan__btn {
+	margin-top: 63px;
+	a {
+		background-color: transparent;
+		padding: 20px 35px;
+		border-radius: 30px;
+		border: 1px solid #fff;
+		font-size: 16px;
+		line-height: 20px;
+		color: #fff;
+		margin: 0 15px;
+		&:hover {
+			background-color: #fff;
+			color: $btn-blue;
+			transition: all .3s;
+		}
+	}
+}			
+
+
+
+
+
+
+
+
+
+
+
+

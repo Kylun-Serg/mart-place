@@ -9,7 +9,11 @@ html {
 }
 
 body {
-	
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	color: #555555;
 }
 
 a {
@@ -21,4 +25,18 @@ ul, li{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.wrap {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.blue-btn {
+	background-color: #0674ec;
+	color: #fff;
+	border-radius: 25px;
+	text-align: center;
+
 }
