@@ -87,3 +87,31 @@ button {
 	font-weight: 500;
 	color: #000;
 }
+
+.plugin-wp::before {
+	content:"";
+	position: absolute;
+	background-image: url('../images/features-slider-item/wordpress.svg');
+	width: 15px;
+	height: 15px;
+	left: 0;
+	top: 6px;
+}
+
+.star-active {
+	display: block;
+}
+
+.star-disable {
+	display: none;
+}
+
+
+
+.blue-btn {
+	color: #fff;
+	background-color: $btn-blue;
+	padding: 20px 32px 18px;
+	border-radius: 28px;
+	text-align: center;
+}
