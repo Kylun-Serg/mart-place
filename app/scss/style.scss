@@ -776,3 +776,98 @@
 }
 
 
+										/*ADVANTAGES*/
+
+.advantages {
+	padding-top: 115px;
+	padding-bottom: 120px;
+
+}	
+
+.advantages__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}								
+
+.advantages__item {
+	max-width: 361px;
+	min-height: 375px;
+	padding: 55px 30px 40px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+  	box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  	text-align: center;
+	position: relative;
+	&-number {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		color: #5c87f8;
+		font-size: 48px;
+		opacity: 0.2;
+	}
+	&-img {
+		width: 75px;
+		height: auto;
+		margin: 0 auto;
+	}
+	&-title {
+		margin-top: 40px;
+		margin-bottom: 20px;
+		color: #000;
+		font-size: 24px;
+	}
+}	
+
+									/*SELL*/
+
+							
+
+.sell__inner {
+	display: flex;
+}
+
+.sell-bg {
+	width: 50%;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 100px 0px;
+}
+
+.sell__box {
+	background-image: url('../images/content/sell/blue-bg.jpg');	
+}
+
+.buy__box {
+	background-image: url('../images/content/sell/violet-bg.jpg');
+}
+
+.sell__box-inner {
+	color: #fff;
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+.sell__image {
+	width: 110px;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.sell__title {
+	font-size: 36px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.sell__btn {
+	margin-top: 35px;
+}
+
+.buy__box .white-btn {
+	color: #7347c1;
+}

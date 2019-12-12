@@ -63,15 +63,21 @@ button {
 	padding: 0px 15px;
 }
 
-.blue-btn {
-	background-color: #0674ec;
-	color: #fff;
-	border-radius: 25px;
-	text-align: center;
-
+.wrap-fluid {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 30px;
 }
 
-.title {
+// .blue-btn {
+// 	background-color: #0674ec;
+// 	color: #fff;
+// 	border-radius: 25px;
+// 	text-align: center;
+
+// }
+
+.title-box {
 	padding: 40px 25px;
 	background-color: #fff;
 	font-size: 30px;
@@ -80,6 +86,22 @@ button {
 	border-radius: 4px;
 	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
 	margin-bottom: 50px;
+}
+
+.title-content {
+	max-width: 730px;
+	text-transform: capitalize;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 55px;
+	h3 {
+		font-size: 36px;
+		color: #000;
+		margin-bottom: 28px;
+	}
+	span {
+		color: #0674ec;
+	}
 }
 
 .title-item {
@@ -111,6 +133,14 @@ button {
 .blue-btn {
 	color: #fff;
 	background-color: $btn-blue;
+	padding: 20px 32px 18px;
+	border-radius: 28px;
+	text-align: center;
+}
+
+.white-btn {
+	color: #0674ec;
+	background-color: #fff;
 	padding: 20px 32px 18px;
 	border-radius: 28px;
 	text-align: center;
