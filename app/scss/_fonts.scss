@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-clock-o:before {
+  content: "\f017";
+}
+.icon-eye:before {
+  content: "\f06e";
+}
 .icon-shopping-cart:before {
   content: "\f07a";
 }
@@ -39,6 +45,9 @@
 }
 .icon-users:before {
   content: "\f0c0";
+}
+.icon-comment-o:before {
+  content: "\f0e5";
 }
 .icon-cloud-download:before {
   content: "\f0ed";

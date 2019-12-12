@@ -35,6 +35,20 @@ $(function(){
       prevArrow: '<button class="slick-arrow slick-prev"><img src="../images/features-slider-item/arrow-left.svg" alt=""></button>',
   });
 
+  $('.feedback__slider-inner').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: false,
+  });
+
+    $('.blog-slider__inner').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+  });
+
   var mixer = mixitup('.new-products__inner-box');
 
 });
