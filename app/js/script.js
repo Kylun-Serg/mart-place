@@ -29,8 +29,7 @@ $(function(){
       dots: false,
       infinite: true,
       speed: 800,
-      slidesToShow: 3,
-      
+      slidesToShow: 3, 
       nextArrow: '<button class="slick-arrow slick-next"><img src="../images/features-slider-item/arrow-right.svg" alt=""></button>',
       prevArrow: '<button class="slick-arrow slick-prev"><img src="../images/features-slider-item/arrow-left.svg" alt=""></button>',
   });

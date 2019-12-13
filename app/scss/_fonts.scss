@@ -25,8 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-envelope-o:before {
+  content: "\f003";
+}
 .icon-clock-o:before {
   content: "\f017";
+}
+.icon-map-marker:before {
+  content: "\f041";
 }
 .icon-eye:before {
   content: "\f06e";
@@ -37,6 +43,21 @@
 .icon-heart-o:before {
   content: "\f08a";
 }
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-globe:before {
+  content: "\f0ac";
+}
 .icon-briefcase:before {
   content: "\f0b1";
 }
@@ -45,6 +66,9 @@
 }
 .icon-users:before {
   content: "\f0c0";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
 }
 .icon-comment-o:before {
   content: "\f0e5";
@@ -57,4 +81,10 @@
 }
 .icon-smile-o:before {
   content: "\f118";
+}
+.icon-google:before {
+  content: "\f1a0";
+}
+.icon-pinterest-p:before {
+  content: "\f231";
 }
