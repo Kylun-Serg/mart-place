@@ -48,6 +48,26 @@ $(function(){
       arrows: false,
   });
 
-  var mixer = mixitup('.new-products__inner-box');
+
+  $('.notification').click(function() {
+    $('.notification__menu').slideToggle(200);
+  });
+
+  $('.user').click(function() {
+    $('.user__menu').slideToggle(200);
+  });
+
+  $('.message').click(function() {
+    $('.message__menu').slideToggle(200);
+  });
+
+   $('.basket').click(function() {
+    $('.basket__menu').slideToggle(200);
+  });
+
+  // var mixer = mixitup('.new-products__inner-box');
+
+
+
 
 });

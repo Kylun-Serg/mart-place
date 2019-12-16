@@ -1,3 +1,7 @@
 $bg-gray: #eef1f3;
 $btn-blue: #0674ec;
 $tags:#868c96;
+
+@mixin quicksand {
+	font-family: 'Quicksand', sans-serif !important;
+}

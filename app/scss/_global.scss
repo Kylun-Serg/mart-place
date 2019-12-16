@@ -146,3 +146,86 @@ button {
 	text-align: center;
 	font-size: 16px;
 }
+
+.violet-btn {
+	background-color: #7347c1;
+}
+
+
+
+.triangle::after {
+	content: '';
+	position: absolute;
+	top: -11px;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 10px solid $btn-blue;
+}
+
+.user-menu-fav,
+.basket-menu-fav {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	position: relative;
+	&::before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 15px;
+	}
+}
+
+.love-fav {	
+	background-color: #e6f1fd;
+	&::before {
+		color: $btn-blue;
+	}
+}
+
+.comment-fav {	
+	background-color: #f1ecf9;
+	&::before {
+		color: #7347c1;
+	}
+}
+
+.cart-fav{	
+	background-color: #fff0f0;
+	&::before {
+		color: #ff6a6c;
+	}
+}
+
+
+.star-fav {	
+	background-color: #effaeb;
+	&::before {
+		color: #62d03a;
+	}
+}
+
+.trash-fav {
+	background-color: #f1ecf9;
+	&::before {
+		color: #818c98;
+	}
+}
+
+.message__new-fav {
+	&::before {
+		color: $btn-blue;
+	}
+}
+
+.message__anwers {
+	&::before {
+		color: #555;
+	}
+}
+
+
+	
