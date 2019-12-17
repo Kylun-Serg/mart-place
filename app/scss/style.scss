@@ -524,10 +524,6 @@
 	display: block;
 }
 
-.drop__down-menu:hover .drop-down__mega-menu{
-	display: block;
-}
-
 .header__menu-inner {
 	position: relative;
 }
@@ -567,7 +563,8 @@
 	li{
 		width: 180px;
 		a {
-			color: #54667a;
+			color: #333;
+			font-weight: 500;
 			width: 100%;
 			padding: 0 5px;
 			&:hover {
@@ -627,6 +624,9 @@
 		cursor: pointer;
 	}
 }
+
+
+
 
 				/*SLOGAN*/
 
