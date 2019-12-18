@@ -1,5 +1,5 @@
 $(function(){
-	
+
 	$('select').styler();
 
 	$(".features-slider__item-footer-star").rateYo({
@@ -96,7 +96,13 @@ $(".link__mega-menu, .drop-down__mega-menu").hover(function() {
       $(".drop-down__mega-menu").show();
     }, function() {
       $(".drop-down__mega-menu").hide();     
-  });
+});
+
+$('.menu__header-btn').on('click', function(){
+  $('.menu__header-list').slideToggle();
+});
+
+
 
 // var mixer = mixitup('.new-products__inner-box');  
 

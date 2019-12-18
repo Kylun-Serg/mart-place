@@ -1,0 +1,342 @@
+@media (max-width: 1120px) {
+
+	/*START FOOTER*/
+	.footer__inner {
+		flex-wrap: wrap;
+	}
+	.footer__logo {
+		margin-bottom: 15px;
+	}
+
+	.footer__box {
+		margin-bottom: 35px;
+		&-title {
+			margin-bottom: 15px;
+		}
+		&-text {
+			margin-bottom: 18px;
+		}
+		li+li {
+			 margin-top: 4px;
+		}
+	}
+
+	.footer__box-contact {
+		max-width: 100%;
+	}
+
+	/*END FOOTER*/
+
+}
+
+@media (max-width: 990px) {
+	.menu__header li+li{
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 911px) {
+	
+	.menu__header-list {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+		top: 81px;
+    	width: 100%;
+    	text-align: center;
+ 		left: 0;
+	}
+
+	.menu__header-btn {
+		display: block;
+		width: 40px;
+		margin-left: 14px;
+		cursor: pointer;
+		span {
+			display: block;
+			background-color: #262b30;
+			height: 5px;
+			&+span {
+				margin-top: 5px;
+			}
+		}
+	}
+
+	.drop__down-menu {
+    	padding-bottom: 10px;
+    	margin-top: 10px;
+    }
+
+    .drop__down-list {
+    	top: 51px;
+    	text-align: left;
+    	li + li {
+			margin-left: 0;
+    	}
+    }
+
+
+
+	
+   
+}
+
+@media (max-width: 830px) {
+
+	/*START MENU*/
+	
+	.header__btn {
+		display: none;
+	}
+
+	/*END MENU*/
+
+	/*START FOOTER*/
+	
+	.footer__inner {
+		justify-content: flex-start;
+	}
+	
+	.footer__box-feedback {
+		max-width: 100%;
+	}
+
+	.footer__soc-icons {
+		text-align: center;
+	}
+
+	.footer__box-menu {
+		margin: 0 auto 25px;
+	}
+
+	.footer-header__inner{
+		padding-top: 35px;
+		padding-bottom: 0;
+	}
+
+	/*END FOOTER*/
+
+}
+
+@media (max-width: 660px) {
+
+	/*START MENU*/
+	.notification__menu, .message__menu {
+		width: 320px;
+		padding: 10px;
+	}
+	.notification__menu {
+		left: -4px;
+	}
+
+	.basket__menu {
+		width: 310px;
+		transform: translate(50%, 0%);
+		&-inner {
+			padding: 10px 8px 0px;
+		}
+	}
+}
+
+/*END MENU*/
+
+@media (max-width: 600px) {
+
+	/*START MENU*/
+
+	.header__top-content {
+		.notification, .message {
+			display: none;
+		}
+	}
+
+
+
+	/*END MENU*/
+
+}	
+
+@media (max-width: 520px) {
+
+			/*START MENU*/
+	.header {
+		.wrap {
+			padding: 0 10px;
+		}
+	}
+
+	.header__top-logo {
+		max-width: 130px;
+	}
+	.header__user-nav+.header__user-nav {
+		margin-left: 5px;
+	}
+
+	.user {
+		font-size: 13px;
+		margin-left: 10px;
+		&__image {
+			width: 40px;
+			height: 40px;
+			margin-right: 5px;
+		}
+		&__name {
+			font-size: 14px;
+		}
+	}
+
+	.top-search-form {
+		display: none;
+	}
+
+	.menu__header {
+		margin-left: auto;
+	}
+
+	.basket__menu {
+	    width: 295px;
+	    right: 10px;
+	}
+
+	.basket__item {
+		padding-bottom: 10px;
+		&-title {
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+
+	.basket__item+.basket__item {
+		padding-top: 10px;
+	}
+
+	.basket__item-price-inner {
+		padding: 10px 0px;
+	}
+
+	.basket__item-btn a {
+		font-size: 14px;
+		height: 40px;
+		line-height: 40px;
+	}
+
+	.menu__header-btn {
+		width: 30px;
+		span {
+			height: 4px;
+			&+span {
+				margin-top: 3px;
+			}
+		}
+	}
+
+	.user__menu {
+		padding: 10px;
+	}
+
+	.user__menu li a  {
+		font-size: 14px;
+		line-height: 35px;
+	}
+
+	.menu__header-list {
+		left: 0;
+		li {
+			display: block;
+			border-bottom: 1px solid #0c0c0c;
+			a {
+				display: block;
+			}
+		}
+	}
+	.menu__header li+li {
+		margin-left: 0;
+	}
+}
+			/*END MENU*/
+
+@media (max-width: 390px) {
+
+
+	/*START MENU*/
+	// .header__top-logo {
+	// 	max-width: 110px;
+	// }
+
+	.header__user-nav span {
+	    position: absolute;
+	    width: 16px;
+	    height: 16px;
+	    border-radius: 50%;
+	    text-align: center;
+	    line-height: 13px;
+	    right: -10px;
+	    top: -14px;
+	    font-size: 13px;
+	}
+		
+	/*END MENU*/
+	
+	/*START FOOTER*/
+	footer {
+		.wrap {
+			padding: 0 10px;
+		}
+	}
+
+	.footer__box {
+		.footer__soc-icon+.footer__soc-icon {
+			margin-left: 8px;
+		}
+
+		.footer__soc-icon {
+			width: 32px;
+			height: 32px;
+		}
+		.footer__soc-icons {
+			margin-top: 30px;
+		}
+	}
+
+	.footer__box-menu {
+		margin: 0px 0px 25px;
+	}
+
+	.footer__inner {
+		font-size: 15px;
+	}
+
+	.footer__box-feedback {
+		input {
+			min-height: 40px;
+		}
+		button {
+			min-height: 40px;
+		}
+	}
+
+	.footer__bottom {
+		font-size: 15px;
+		padding: 15px 0;
+	}
+	/*END FOOTER*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 911px) {
+	.menu__header-list {
+		display: block !important;
+	}
+}	
