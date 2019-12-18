@@ -47,63 +47,120 @@ $(function(){
       slidesToScroll: 1,
       arrows: false,
   });
+  
 
+  /*MENU*/
 
-  $('.notification').click(function(e) {
-  if( $(e.target).closest('.notification__menu').length===0) {
-  $('.notification__menu').slideToggle(200);
-  }
-  });
+$('html').click( function(e) {
 
-   $('html').click( function(e) {
     if( $(e.target).closest('.notification').length===0 && $(e.target).closest(".notification__menu").length===0) {
-      $('.notification__menu').slideUp(200);
-    }
-  });
-
-
-    $('.message').click(function(e) {
-  if( $(e.target).closest('.message__menu').length===0) {
-  $('.message__menu').slideToggle(200);
+  $('.notification__menu').slideUp(200);
   }
-  });
-
-   $('html').click( function(e) {
     if( $(e.target).closest('.message').length===0 && $(e.target).closest(".message__menu").length===0) {
-      $('.message__menu').slideUp(200);
-    }
-  });
-
-
-  $('.basket').click(function(e) {
-  if( $(e.target).closest('.basket__menu').length===0) {
-  $('.basket__menu').slideToggle(200);
+  $('.message__menu').slideUp(200);
   }
-  });
-
-   $('html').click( function(e) {
     if( $(e.target).closest('.basket').length===0 && $(e.target).closest(".basket__menu").length===0) {
-      $('.basket__menu').slideUp(200);
-    }
-  });
-
-
-  $('.user').click(function() {
-    $('.user__menu').slideToggle(200);
-  });
-
-  $('html').click( function(e) {
+  $('.basket__menu').slideUp(200);
+  }
     if( $(e.target).closest('.user').length===0 && $(e.target).closest(".user__menu").length===0) {
-      $('.user__menu').slideUp(200);
+    $('.user__menu').slideUp(200);
+  }
+});
+
+
+
+$('.header__user-nav').click(function(e) {
+
+  if( $(e.target).hasClass("notification")) {
+    if( $(e.target).closest('.notification__menu').length===0) {
+      $('.notification__menu').slideToggle(200);
     }
-  });
 
+  }else if( $(e.target).hasClass("message")){
+    if( $(e.target).closest('.message__menu').length===0) {
+      $('.message__menu').slideToggle(200);
+    }
 
-  $(".link__mega-menu, .drop-down__mega-menu").hover(function() {
+  }else if( $(e.target).hasClass("basket")){
+    if( $(e.target).closest('.basket__menu').length===0) {
+      $('.basket__menu').slideToggle(200);
+    }
+  } 
+});
+
+$('.user').click(function() {
+  $('.user__menu').slideToggle(200);
+});
+
+$(".link__mega-menu, .drop-down__mega-menu").hover(function() {
       $(".drop-down__mega-menu").show();
     }, function() {
       $(".drop-down__mega-menu").hide();     
   });
+
+// var mixer = mixitup('.new-products__inner-box');  
+
+
+
+
+  /*MENU*/
+
+
+  // $('.notification').click(function(e) {
+  // if( $(e.target).closest('.notification__menu').length===0) {
+  // $('.notification__menu').slideToggle(200);
+  // }
+  // });
+
+  //  $('html').click( function(e) {
+  //   if( $(e.target).closest('.notification').length===0 && $(e.target).closest(".notification__menu").length===0) {
+  //     $('.notification__menu').slideUp(200);
+  //   }
+  // });
+
+
+  //   $('.message').click(function(e) {
+  // if( $(e.target).closest('.message__menu').length===0) {
+  // $('.message__menu').slideToggle(200);
+  // }
+  // });
+
+  //  $('html').click( function(e) {
+  //   if( $(e.target).closest('.message').length===0 && $(e.target).closest(".message__menu").length===0) {
+  //     $('.message__menu').slideUp(200);
+  //   }
+  // });
+
+
+  // $('.basket').click(function(e) {
+  // if( $(e.target).closest('.basket__menu').length===0) {
+  // $('.basket__menu').slideToggle(200);
+  // }
+  // });
+
+  //  $('html').click( function(e) {
+  //   if( $(e.target).closest('.basket').length===0 && $(e.target).closest(".basket__menu").length===0) {
+  //     $('.basket__menu').slideUp(200);
+  //   }
+  // });
+
+
+  // $('.user').click(function() {
+  //   $('.user__menu').slideToggle(200);
+  // });
+
+  // $('html').click( function(e) {
+  //   if( $(e.target).closest('.user').length===0 && $(e.target).closest(".user__menu").length===0) {
+  //     $('.user__menu').slideUp(200);
+  //   }
+  // });
+
+
+  // $(".link__mega-menu, .drop-down__mega-menu").hover(function() {
+  //     $(".drop-down__mega-menu").show();
+  //   }, function() {
+  //     $(".drop-down__mega-menu").hide();     
+  // });
 
   // var mixer = mixitup('.new-products__inner-box');
 
