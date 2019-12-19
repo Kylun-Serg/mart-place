@@ -102,6 +102,13 @@ $('.menu__header-btn').on('click', function(){
   $('.menu__header-list').slideToggle();
 });
 
+$('.drop__down-menu').on('click', function(){
+  $(this).children('.drop__down-list').slideToggle();
+});
+
+
+
+
 
 
 // var mixer = mixitup('.new-products__inner-box');  
