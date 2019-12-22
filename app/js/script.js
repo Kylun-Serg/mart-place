@@ -85,7 +85,7 @@ $('.header__user-nav').click(function(e) {
     if( $(e.target).closest('.basket__menu').length===0) {
       $('.basket__menu').slideToggle(200);
     }
-  } 
+  }
 });
 
 $('.user').click(function() {
@@ -103,10 +103,8 @@ $('.menu__header-btn').on('click', function(){
 });
 
 $('.drop__down-menu').on('click', function(){
-  $(this).children('.drop__down-list').slideToggle();
+  $(this).children('.drop__down-list').toggleClass('active');
 });
-
-
 
 
 
