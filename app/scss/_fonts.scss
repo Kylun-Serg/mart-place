@@ -34,6 +34,12 @@
 .icon-user:before {
   content: "\f007";
 }
+.icon-th:before {
+  content: "\f00a";
+}
+.icon-th-list:before {
+  content: "\f00b";
+}
 .icon-cog:before {
   content: "\f013";
 }
@@ -55,8 +61,14 @@
 .icon-map-marker:before {
   content: "\f041";
 }
+.icon-chevron-right:before {
+  content: "\f054";
+}
 .icon-eye:before {
   content: "\f06e";
+}
+.icon-chevron-down:before {
+  content: "\f078";
 }
 .icon-shopping-cart:before {
   content: "\f07a";
@@ -132,6 +144,9 @@
 }
 .icon-google:before {
   content: "\f1a0";
+}
+.icon-genderless:before {
+  content: "\f22d";
 }
 .icon-pinterest-p:before {
   content: "\f231";

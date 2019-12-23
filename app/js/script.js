@@ -106,6 +106,23 @@ $('.drop__down-menu').on('click', function(){
   $(this).children('.drop__down-list').toggleClass('active');
 });
 
+$('.product-page__aside-filter-title').on('click', function(){
+  $(this).next('ul').slideToggle();
+});
+
+$('.product-page__aside-filter-title').on('click', function(){
+  $(this).next('.aside-filter__product-circle-inner').slideToggle();
+});
+
+
+$(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 350,
+    from: 30,
+    to: 300,
+    prefix: "$"
+});
 
 
 

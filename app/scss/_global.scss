@@ -265,5 +265,14 @@ button {
 
 
 .active-filter {
-	color: $btn-blue;
+	color: $btn-blue !important;
+	&::before {
+		color: $btn-blue !important;
+	}
+}
+
+.active-btn {
+	&::before {
+		color: #328def;
+	}
 }

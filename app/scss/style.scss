@@ -1962,10 +1962,20 @@
 	}
 
 	&-btn {
-		padding: 10px 20px;
+		padding: 0px 20px;
+		height: 44px;
 		background-color: #fff;
 		border: 1px solid #eceff2;
 		border-radius: 3px;
+		button {
+			border:none;
+			background-color: transparent;
+			color: #adb1b8;
+			line-height: 40px;
+			&::before {
+				font-size: 22px;
+			}
+		}
 	}		
 }
 
@@ -1977,12 +1987,23 @@
 		background-color: #fff;
 		box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
 		border-radius: 4px;
+		margin-bottom: 30px;
 		&-title {
 			color: #000;
 			font-size: 20px;
 			padding-bottom: 20px;
 			margin-bottom: 20px;
 			border-bottom: 1px solid #e7ebee;
+			position: relative;
+			cursor: pointer;
+			&::after {
+				content: '\f078';
+			    font-family: 'icomoon';
+			    color: #747b86;
+			    font-size: 16px;
+			    position: absolute;
+			    right: 0;
+			}
 		}
 	}
 
@@ -2005,20 +2026,115 @@
 			color: #747b86;
 			font-size: 15px;
 		}
-		&:before{
-			content: '\f105';
+		&::before{
+			content: '\f054';
 		    font-family: 'icomoon';
 		    color: #747b86;
-		    font-size: 14px;
+		    font-size: 11px;
 		    position: absolute;
 		    left: 0;
 		}
+		&:hover::before {
+			color: $btn-blue;
+		}
 
+	}
+
+	.irs-line {
+		height: 6px;
+		background-color: #efedf3;
+	}
+
+	.irs-bar {
+		height: 6px;
+		background-color: rgb(115, 71, 193);
+	}
+
+	.irs-handle {
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background-color: $btn-blue;
+		top: 19px;
+		cursor: pointer;
+		i:first-child {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: #fff;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			margin-left: 0;
+		}
+	}
+
+	.irs-handle.state_hover>i:first-child, .irs-handle:hover>i:first-child {
+		background-color: #fff;
+	}
+
+	.irs-from, .irs-to {
+		top: 55px;
+		font-size: 15px;
+		color: #7347c1;
+		line-height: 32px;
+		padding: 0 25px;
+		border-radius: 20px;
+		background-color: #f1ecf9;
+		cursor: pointer;
+		&::before {
+			display: none;
+		}
+	}
+
+	.irs-single {
+		top: -10px;
+		left: 50% !important;
+		transform: translate(-50%);
+		font-size: 12px;
+		color: #7347c1;
+		line-height: 24px;
+		padding: 0 18px;
+		border-radius: 18px;
+		background-color: #f1ecf9;
+		&::before {
+			border-top-color: #f1ecf9;
+		}
+	}
+
+	.irs-from {
+		left: 0 !important;
+	}
+
+	.irs-to {
+		left: auto !important;
+		right: 0;
+	}
+
+	.irs-max, .irs-min {
+		display: none;
+	}
+
+	button {
+		margin-top: 85px;
+		font-weight: 500;
+		padding: 13px 30px 13px;
 	}
 
 }
 
 
+.product-page__aside-filter-btn {
+	text-align: center;
+}
+
+.aside-filter__product-circle {
+	li {
+		&::before{
+			content: '\f22d';
+			font-size: 14px;
+		}
+	}
+}
 
 
 
