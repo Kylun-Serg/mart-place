@@ -14,6 +14,7 @@ $(function(){
       starWidth: "17px",
       normalFill: "#f6e4ac",
       ratedFill: "#ffc000",
+      spacing: "2px",
   });
 
 	$('.features-slider__inner').slick({
