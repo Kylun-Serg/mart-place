@@ -115,6 +115,18 @@ $('.product-page__aside-filter-title').on('click', function(){
   $(this).next('.aside-filter__product-circle-inner').slideToggle();
 });
 
+$('.icon-th-list').on('click', function(){
+  $('.product__item').addClass('list');
+  $('.icon-th-list').addClass('active-btn');
+  $('.icon-th').removeClass('active-btn');
+});
+
+$('.icon-th').on('click', function(){
+  $('.product__item').removeClass('list');
+  $('.icon-th').addClass('active-btn');
+  $('.icon-th-list').removeClass('active-btn');
+});
+
 
 $(".js-range-slider").ionRangeSlider({
     type: "double",
