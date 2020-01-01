@@ -17,6 +17,16 @@ $(function(){
       spacing: "2px",
   });
 
+    $(".single-product__aside-rating").rateYo({
+      rating: 4.8,
+      starWidth: "17px",
+      normalFill: "#f6e4ac",
+      ratedFill: "#ffc000",
+      spacing: "2px",
+  });
+
+    
+
 	$('.features-slider__inner').slick({
 		dots: false,
   		infinite: true,
@@ -137,9 +147,27 @@ $(".js-range-slider").ionRangeSlider({
     prefix: "$"
 });
 
+$('.single-product-tabs .tab').on('click', function(event) {
+var id = $(this).attr('data-id');
+  $('.single-product-tabs').find('.tab-item').removeClass('active-tab').hide();
+  $('.single-product-tabs .tabs').find('.tab').removeClass('active');
+  $(this).addClass('active');
+  $('#'+id).addClass('active-tab').fadeIn();
+  return false;
+});
 
 
-// var mixer = mixitup('.new-products__inner-box');  
+
+document.querySelectorAll('[name=select2]').forEach(s => {
+  s.addEventListener('change', function() {
+    document.querySelectorAll('.checkbox-info').forEach(d => d.classList.add('deactive'));
+    document.getElementById(this.value).classList.remove('deactive');
+  });
+});
+
+
+
+var mixer = mixitup('.new-products__inner-box');  
 
 
 

@@ -270,10 +270,31 @@ button {
 		color: $btn-blue !important;
 	}
 }
-
+s
 .active-btn {
 	&::before {
 		color: #328def;
 	}
+}
+
+
+.single-product__item {
+	background-color: #fff;
+	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	border-radius: 4px;
+	padding: 0 30px;
+}
+
+.blog__item {
+	background-color: #fff;
+	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	border-radius: 4px;
+	width: 100%;
+}
+
+
+
+.deactive {
+  display: none;
 }
 
