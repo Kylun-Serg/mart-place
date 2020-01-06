@@ -17,6 +17,7 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	overflow: hidden;
 }
 .content {
 	flex: 1 0 auto;
@@ -135,6 +136,13 @@ button {
 	background-color: $btn-blue;
 	border-radius: 28px;
 	text-align: center;
+	width: 190px;
+	height: 55px;
+	box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.1);
+	&:hover {
+		background-color: #fff;
+		color: $btn-blue;
+	}
 }
 
 .white-btn {
@@ -143,6 +151,8 @@ button {
 	border-radius: 28px;
 	text-align: center;
 	font-size: 16px;
+	width: 190px;
+	height: 50px;
 }
 
 .violet-btn {
@@ -232,6 +242,10 @@ button {
 	padding: 0 5px;
 	margin: 0 auto 35px;
 
+	.blue-btn {
+		width: 110px;
+	}
+
 	form {
 		position: relative;
 	}
@@ -268,7 +282,7 @@ button {
 		color: $btn-blue !important;
 	}
 }
-s
+
 .active-btn {
 	&::before {
 		color: #328def;
@@ -289,7 +303,6 @@ s
 	border-radius: 4px;
 	width: 100%;
 }
-
 
 
 .deactive {
